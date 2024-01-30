@@ -143,6 +143,7 @@
     - FoodLemon
   mutationPrototypes:
     - lemoon
+    - singulemon
   harvestRepeat: Repeat
   lifespan: 55
   maturation: 6
@@ -182,6 +183,32 @@
       Max: 4
       PotencyDivisor: 25
     Milk:
+      Min: 8
+      Max: 20
+      PotencyDivisor: 5
+
+- type: seed
+  id: singulemon
+  name: seeds-singulemon-name
+  noun: seeds-noun-seeds
+  displayName: seeds-singulemon-display-name
+  plantRsi: Objects/Specific/Hydroponics/singulemon.rsi
+  packetPrototype: SingulemonSeeds
+  productPrototypes:
+    - FoodSingulemon
+  harvestRepeat: Repeat
+  lifespan: 90
+  maturation: 8
+  production: 6
+  yield: 1
+  potency: 1
+  idealLight: 8
+  chemicals:
+    Vitamin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+    Singulo:
       Min: 8
       Max: 20
       PotencyDivisor: 5
@@ -558,6 +585,8 @@
   packetPrototype: AppleSeeds
   productPrototypes:
     - FoodApple
+  mutationPrototypes:
+    - goldenApple
   harvestRepeat: Repeat
   lifespan: 55
   maturation: 6
@@ -571,6 +600,32 @@
       Max: 10
       PotencyDivisor: 10
     Vitamin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+
+- type: seed
+  id: goldenApple
+  name: seeds-goldenApple-name
+  noun: seeds-noun-seeds
+  displayName: seeds-goldenApple-display-name
+  plantRsi: Objects/Specific/Hydroponics/goldenApple.rsi
+  packetPrototype: goldenAppleSeeds
+  productPrototypes:
+    - FoodGoldenApple
+  harvestRepeat: Repeat
+  lifespan: 55
+  maturation: 6
+  production: 6
+  yield: 1
+  potency: 10
+  idealLight: 6
+  chemicals:
+    Nutriment:
+      Min: 1
+      Max: 10
+      PotencyDivisor: 10
+    Ichor:
       Min: 1
       Max: 4
       PotencyDivisor: 25
@@ -1070,6 +1125,8 @@
   packetPrototype: FlyAmanitaSeeds
   productPrototypes:
     - FoodFlyAmanita
+  mutationPrototypes:
+    - FoodFlyChlorala
   lifespan: 25
   maturation: 12
   production: 3
@@ -1084,6 +1141,33 @@
       Max: 25
       PotencyDivisor: 4
     Nutriment: ## yumby :)
+      Min: 1
+      Max: 5
+      PotencyDivisor: 20
+    
+- type: seed
+  id: flyChlorala
+  name: seeds-flychlorala-name
+  noun: seeds-noun-spores
+  displayName: seeds-flychlorala-display-name
+  plantRsi: Objects/Specific/Hydroponics/fly_chlorala.rsi
+  packetPrototype: FlyChloralaSeeds
+  productPrototypes:
+    - FoodFlyChlorala
+  lifespan: 25
+  maturation: 12
+  production: 3
+  yield: 3
+  potency: 10
+  growthStages: 2
+  waterConsumption: 0.60
+  nutrientConsumption: 0.50
+  chemicals:
+    ChloralHydrate:
+      Min: 1
+      Max: 25
+      PotencyDivisor: 4
+    Nutriment: 
       Min: 1
       Max: 5
       PotencyDivisor: 20

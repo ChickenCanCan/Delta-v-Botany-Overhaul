@@ -104,6 +104,16 @@
 
 - type: entity
   parent: SeedBase
+  name: packet of singulemon seeds
+  id: SingulemonSeeds
+  components:
+    - type: Seed
+      seedId: singulemon
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/singulemon.rsi
+
+- type: entity
+  parent: SeedBase
   name: packet of lime seeds
   id: LimeSeeds
   components:
@@ -221,6 +231,16 @@
       seedId: apple
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/apple.rsi
+
+- type: entity
+  parent: SeedBase
+  name: packet of golden apple seeds
+  id: goldenAppleSeeds
+  components:
+    - type: Seed
+      seedId: goldenApple
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/goldenApple.rsi
 
 - type: entity
   parent: SeedBase
@@ -394,6 +414,17 @@
       seedId: flyAmanita
     - type: Sprite
       sprite: Objects/Specific/Hydroponics/fly_amanita.rsi
+
+- type: entity
+  parent: SeedBase
+  name: packet of fly chlorala spores
+  description: "The slightly less death-y variant of Amanita."
+  id: FlyChloralaSeeds
+  components:
+    - type: Seed
+      seedId: flyChlorala
+    - type: Sprite
+      sprite: Objects/Specific/Hydroponics/fly_chlorala.rsi
 
 - type: entity
   parent: SeedBase

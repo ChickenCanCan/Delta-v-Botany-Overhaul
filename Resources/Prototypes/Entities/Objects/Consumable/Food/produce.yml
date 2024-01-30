@@ -507,6 +507,37 @@
     - Fruit
 
 - type: entity
+  name: singulemon
+  parent: FoodProduceBase
+  id: FoodSingulemon
+  description: It stares back...
+  components:
+  - type: FlavorProfile
+    flavors:
+      - empty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 9
+        reagents:
+        - ReagentId: Singulo
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 4
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/singulemon.rsi
+  - type: Produce
+    seedId: singulemon
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Singulo
+        Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
   name: lime
   parent: FoodLemon
   id: FoodLime
@@ -811,6 +842,37 @@
       reagents:
       - ReagentId: JuiceApple
         Quantity: 10
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: apple
+  parent: FoodProduceBase
+  id: FoodGoldenApple
+  description: It's a large piece of Eden.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - heavy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 14
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Ichor
+          Quantity: 4
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/goldenApple.rsi
+  - type: Produce
+    seedId: goldenApple
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Ichor
+        Quantity: 5
   - type: Tag
     tags:
     - Fruit
@@ -1319,6 +1381,32 @@
     sprite: Objects/Specific/Hydroponics/fly_amanita.rsi
   - type: Produce
     seedId: flyAmanita
+  - type: Extractable
+    grindableSolutionName: food
+  - type: BadFood
+
+- type: entity
+  name: fly chlorala
+  parent: FoodProduceBase
+  id: FoodFlyChlorala
+  description: Gives off a sickenly sweet scent that makes you feel sleepy.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - mushroom
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: ChloralHydrate
+          Quantity: 25
+        - ReagentId: Nutriment
+          Quantity: 5
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/fly_chlorala.rsi
+  - type: Produce
+    seedId: flyChlorala
   - type: Extractable
     grindableSolutionName: food
   - type: BadFood
